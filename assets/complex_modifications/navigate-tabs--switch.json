@@ -1,0 +1,26 @@
+{
+  "title": "Navigate tabs with ⌘_right + \\ (` on azerty)",
+  "rules": [
+    {
+      "description": "Navigate tabs with ⌘_right + \\ (` on azerty)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "backslash",
+            "modifiers": {
+              "mandatory": ["right_command"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": ["right_control"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

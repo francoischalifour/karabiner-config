@@ -1,0 +1,26 @@
+{
+  "title": "Navigate windows with ⌘_right + ]",
+  "rules": [
+    {
+      "description": "Navigate windows with ⌘_right + ] ($ on azerty)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": ["right_command"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": ["right_command"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
